@@ -153,8 +153,10 @@ function updateState() {
     cScoresDiv.textContent = `Computer Score: ${computerScore}`;
     if (computerScore === 5) {
         commentDiv.textContent = 'The CPU won the match!'
+        tds.forEach(td => td.disabled = true);
     }
     else if (playerScore === 5) {
         commentDiv.textContent = 'You won the match!'
+        tds.forEach(td => td.disabled = true);
     }
 }
