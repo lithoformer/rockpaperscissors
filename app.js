@@ -84,12 +84,12 @@ labelDiv.appendChild(commentDiv);
 outerDiv.appendChild(buttonsDiv);
 outerDiv.appendChild(labelDiv);
 
-body.appendChild(outerDiv);
-
 outerDiv.style.display = 'flex';
 outerDiv.style.flexDirection = 'column';
 outerDiv.style.alignItems = 'center';
 outerDiv.style.justifyContent = 'center';
+
+body.appendChild(outerDiv);
 
 const tds = document.querySelectorAll('button');
 tds.forEach((td, index) => {
